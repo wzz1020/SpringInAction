@@ -1,4 +1,4 @@
-package chapter_13_jmx;
+package com.fengdui.chapter_13_jmx;
 
 /**
  * HelloMBean

@@ -1,5 +1,6 @@
-package chapter_13_jmx;
+package com.fengdui.chapter_13_jmx;
 
+import chapter_13_jmx.HelloMBean;
 import com.sun.jmx.mbeanserver.MXBeanMappingFactory;
 
 import javax.management.*;
@@ -11,7 +12,7 @@ import java.lang.management.ManagementFactory;
  * @author FD
  * @date 2016/5/25
  */
-public class Hello implements HelloMBean{
+public class Hello implements HelloMBean {
 
     private String name;
 

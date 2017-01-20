@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="SpringInAction" />
+        <module name="spring-inAction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringInAction" target="1.5" />
+      <module name="spring-inAction" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
