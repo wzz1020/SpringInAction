@@ -20,8 +20,8 @@ public class RMIConfig {
     @Bean
     public RmiServiceExporter rmiServiceExporter() {
         RmiServiceExporter rmiServiceExporter = new RmiServiceExporter();
-        rmiServiceExporter.setRegistryPort(11222);
-        rmiServiceExporter.setServiceName("rmi://localhost:8888/hello");
+        rmiServiceExporter.setRegistryPort(8888);
+        rmiServiceExporter.setServiceName("hello");
         rmiServiceExporter.setServiceInterface(HelloService.class);
         rmiServiceExporter.setService(new HelloServiceImpl());
         try {

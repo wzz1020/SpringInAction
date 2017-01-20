@@ -1,8 +1,5 @@
 package com.fengdui.chapter_13_jmx;
 
-import chapter_13_jmx.HelloMBean;
-import com.sun.jmx.mbeanserver.MXBeanMappingFactory;
-
 import javax.management.*;
 import java.lang.management.ManagementFactory;
 

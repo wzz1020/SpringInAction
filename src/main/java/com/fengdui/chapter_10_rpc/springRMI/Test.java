@@ -10,12 +10,13 @@ public class Test {
     public static void main(String[] args) {
 
         RmiProxyFactoryBean rmiProxyFactoryBean = new RmiProxyFactoryBean();
-        rmiProxyFactoryBean.setServiceUrl("rmi://localhost:8888/hello");
+        rmiProxyFactoryBean.setServiceUrl("rmi://192.168.0.12:8888/hello");
         rmiProxyFactoryBean.setServiceInterface(HelloService.class);
         rmiProxyFactoryBean.setCacheStub(true);
         rmiProxyFactoryBean.setLookupStubOnStartup(true);
         rmiProxyFactoryBean.setRefreshStubOnConnectFailure(true);
         rmiProxyFactoryBean.afterPropertiesSet();
-        rmiProxyFactoryBean.getObject();
+        HelloService helloService = (HelloService)rmiProxyFactoryBean.getObject();
+        System.out.println(helloService.sayHello("fd"));
     }
 }
